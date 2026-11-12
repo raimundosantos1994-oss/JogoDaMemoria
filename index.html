@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Memória</title>
+
+</head>
+<body>
+
+  <div id="telaInicial">
+    <h1>🃏 Jogo da Memória</h1>
+    <p>Encontre os 16 pares de cartas!</p>
+    <button class="btn" onclick="iniciarJogo()">Iniciar Jogo</button>
+  </div>
+
+  <div id="jogo">
+    <div id="topoJogo">
+      <div id="status">
+        <span>Jogadas: <b id="jogadas">0</b></span>
+        <span>Pares: <b id="pares">0</b> / 16</span>
+      </div>
+      <button class="btn btn-sair" onclick="sairDoJogo()">✕ Sair do Jogo</button>
+    </div>
+    <div id="tabuleiro"></div>
+  </div>
+
+  <div id="vitoria">
+    <div class="caixa">
+      <h2>🎉 Parabéns!</h2>
+      <p>Você completou o jogo em <b id="jogadasFinais">0</b> jogadas!</p>
+      <div class="botoes">
+        <button class="btn" onclick="reiniciar()">Jogar Novamente</button>
+        <button class="btn btn-sair" onclick="sairDoJogo()">✕ Sair do Jogo</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js">
+ 
+</script>
+
+</body>
+</html>
